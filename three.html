@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script type="text/javascript">
+	var a,
+		s1 = 0,
+		s2 = 0;
+	a = prompt('A[] = ', '1,2,3,4,5,6,7,8,9,10,11,12,13,14,15');
+	a = a.split(',');
+	for (var i = 0; i < a.length; i++) {
+		if (i%2 == 0) {
+			s1 += parseFloat(a[i]);
+		}
+		else {
+			s2 += parseFloat(a[i]);
+		}
+	}
+	var abs1 = Math.abs(s1),
+		abs2 = Math.abs(s2);
+	var str = (abs1 > abs2) ? 'S1 > S2' : (
+		(abs1 < abs2) ? 'S2 > S1' : 'S1 = S2'
+	);
+	alert('S1 = ' + s1 + '\nS2 = ' + s2 + '\n' + str);
+</script>
+<body>
+<img src = "./three.png">
+</body>
+</html>

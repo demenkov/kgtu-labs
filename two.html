@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script type="text/javascript">
+	var a,b,c,sum,z;
+	a = parseFloat(prompt('A = '));
+	b = parseFloat(prompt('B = '));
+	c = parseFloat(prompt('C = '));
+	sum = a+b+c;
+	if (sum >= 0) {
+		z = a + Math.min(a,b,c);
+	}
+	else {
+		if (a >= 0) {
+			z = 0.3 * (1 - Math.pow(a,2)) + Math.log(a + c);
+		}
+		else {
+			z = Math.max(a,b,c);
+		}
+	}
+	alert('Z = ' + z);
+</script>
+<body>
+<img src = "./two.png">
+</body>
+</html>
